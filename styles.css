@@ -14,13 +14,14 @@
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 150px; /* Increased size */
+  height: 150px; /* Increased size */
   border-radius: 50%;
   margin: 10px;
-  border: 3px solid #007bff;
+  border: 3px solid #007bff; /* Border color */
   object-fit: cover;
 }
+
 
 .hero-text {
   max-width: 600px;
