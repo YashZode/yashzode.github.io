@@ -83,3 +83,28 @@ footer {
   background: #333;
   color: #fff;
 }
+
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-links img,
+footer .social-links svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+}
+
+footer .social-links img:hover,
+footer .social-links svg:hover {
+  transform: scale(1.2);
+}
+
