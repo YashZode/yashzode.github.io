@@ -102,9 +102,15 @@ footer a:hover {
   margin-bottom: 15px;
 }
 
-#skills p {
+.skills-list {
+  list-style: disc inside;
+  padding-left: 20px;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+.skills-list li {
   margin: 10px 0;
 }
+
 
