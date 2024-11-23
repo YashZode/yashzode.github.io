@@ -51,52 +51,65 @@ header, footer {
   margin-right: 5px;
 }
 
+/* Footer Section */
 footer {
   background-color: #007bff;
   color: #fff;
   padding: 20px 40px;
-  text-align: left; /* Aligns text to the left */
 }
 
-footer h2 {
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Align contact and social media */
+  align-items: center;
+  flex-wrap: wrap; /* Ensure it looks good on small screens */
+}
+
+.contact-info {
+  flex: 1; /* Take up available space on the left */
   text-align: left;
+}
+
+.contact-info h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-footer p {
-  margin: 10px 0;
+.contact-info p {
+  margin: 5px 0;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-footer a {
+.contact-info a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
 }
 
-footer a:hover {
+.contact-info a:hover {
   text-decoration: underline;
 }
 
+/* Social Media Icons */
 .social-icons {
-  margin-top: 15px;
+  display: flex;
+  gap: 15px; /* Space between icons */
 }
 
 .social-icons a {
-  margin: 0 10px;
+  text-decoration: none;
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
   transform: scale(1.2);
 }
+
 
 
 #skills {
