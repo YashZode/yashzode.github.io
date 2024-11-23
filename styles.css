@@ -19,9 +19,10 @@ header, footer {
 
 .hero-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .profile-photo {
@@ -29,7 +30,9 @@ header, footer {
   height: 150px;
   border-radius: 50%;
   border: 3px solid #fff;
+  margin-bottom: 20px;
 }
+
 
 .btn {
   padding: 10px 20px;
