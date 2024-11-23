@@ -52,21 +52,19 @@ header, footer {
 }
 
 /* Footer Section */
+/* Footer Section */
 footer {
   background-color: #007bff;
   color: #fff;
   padding: 20px 40px;
+  margin-top: 20px;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between; /* Align contact and social media */
-  align-items: center;
-  flex-wrap: wrap; /* Ensure it looks good on small screens */
+  display: block; /* Ensure alignment with the "Projects" section */
 }
 
 .contact-info {
-  flex: 1; /* Take up available space on the left */
   text-align: left;
 }
 
@@ -76,9 +74,17 @@ footer {
 }
 
 .contact-info p {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 1rem;
   line-height: 1.6;
+  display: flex; /* Make the icon and text inline */
+  align-items: center; /* Vertically align the icon with text */
+}
+
+.contact-info p img.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Add spacing between icon and text */
 }
 
 .contact-info a {
@@ -89,6 +95,7 @@ footer {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
 
 /* Social Media Icons */
 .social-icons {
