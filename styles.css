@@ -61,7 +61,9 @@ footer {
 }
 
 .footer-content {
-  display: block; /* Ensure alignment with the "Projects" section */
+  display: flex;
+  flex-direction: column; /* Ensure it's a single column layout */
+  margin-left: 20px; /* Adjust alignment to match the "Projects" section */
 }
 
 .contact-info {
@@ -74,17 +76,17 @@ footer {
 }
 
 .contact-info p {
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 1rem;
   line-height: 1.6;
-  display: flex; /* Make the icon and text inline */
-  align-items: center; /* Vertically align the icon with text */
+  display: flex; /* Align icon and text inline */
+  align-items: center; /* Vertically align icon with text */
 }
 
 .contact-info p img.icon {
   width: 20px;
   height: 20px;
-  margin-right: 10px; /* Add spacing between icon and text */
+  margin-right: 10px;
 }
 
 .contact-info a {
