@@ -3,17 +3,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #121212;
+    color: #f0f0f0;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #f0f0f0;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #f0f0f0;
 }
 
 .container {
@@ -24,87 +25,128 @@ a {
 
 /* Hero Section */
 header {
-    background: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #232323;
     color: white;
-    padding: 60px 0;
-    text-align: center;
+    padding: 80px 0;
+    height: 100vh;
+    position: relative;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
+    text-align: left;
+    padding-left: 200px;
+    animation: fadeInUp 2s ease-out;
 }
 
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 4px solid #007bff;
+    animation: scaleIn 2s ease-out;
+}
+
+header:hover .profile-photo {
+    transform: translateY(-50%) scale(1.1);
 }
 
 .hero-text h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
+    font-weight: 700;
+    animation: slideInFromLeft 1.5s ease-out;
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .hero-text .btn {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-text .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 /* About Section */
 #about {
-    background-color: white;
-    padding: 40px 0;
+    background-color: #1e1e1e;
+    padding: 50px 0;
     text-align: center;
+    border-top: 5px solid #007bff;
+    border-bottom: 5px solid #007bff;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 #about p {
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 /* Skills Section */
 #skills {
-    padding: 40px 0;
-    background-color: #f9f9f9;
+    padding: 50px 0;
+    background-color: #2d2d2d;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 #skills h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #007bff;
 }
 
 .skills-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .skills-list div {
     width: 45%;
     margin-bottom: 20px;
+    padding: 15px;
+    background: #3e3e3e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.skills-list div:hover {
+    transform: translateY(-5px);
 }
 
 .skills-list h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #007bff;
 }
 
 .skills-list ul {
@@ -118,20 +160,30 @@ header {
 
 /* Experience Section */
 #experience {
-    padding: 40px 0;
+    padding: 50px 0;
+    background-color: #1e1e1e;
+    border-top: 5px solid #007bff;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .job {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #333;
+    padding: 25px;
+    margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.job:hover {
+    transform: translateY(-5px);
 }
 
 .job h3 {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
 .job p {
@@ -150,16 +202,24 @@ header {
 
 /* Projects Section */
 #projects {
-    padding: 40px 0;
-    background-color: #f9f9f9;
+    padding: 50px 0;
+    background-color: #2d2d2d;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 .project {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #333;
+    padding: 25px;
+    margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 .project h3 {
@@ -169,29 +229,29 @@ header {
 
 .project p {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .project .btn {
     background-color: #28a745;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project .btn:hover {
     background-color: #218838;
+    transform: scale(1.1);
 }
 
-/* Contact Section */
+/* Footer Section */
 footer {
-    background-color: #333;
+    background-color: #232323;
     color: white;
     padding: 40px 0;
     text-align: center;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 footer .contact-info {
@@ -200,7 +260,7 @@ footer .contact-info {
 }
 
 footer .contact-info a {
-    color: #fff;
+    color: #f0f0f0;
     font-size: 1.2em;
 }
 
@@ -211,6 +271,39 @@ footer .contact-info a:hover {
 footer .contact-info p {
     font-size: 1.2em;
     margin: 10px 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* Mobile Responsiveness */
