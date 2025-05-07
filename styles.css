@@ -1,145 +1,231 @@
+/* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-header, footer {
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+header {
+    background: #333;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-
-.btn {
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #007bff;
-  text-decoration: none;
-  border-radius: 5px;
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
- 
-
-.icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 5px;
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-/* Footer Section */
-/* Footer Section */
-footer {
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px 40px;
-  margin-top: 20px;
+.hero-text .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column; /* Ensure it's a single column layout */
-  margin-left: 20px; /* Adjust alignment to match the "Projects" section */
+.hero-text .btn:hover {
+    background-color: #0056b3;
 }
 
-.contact-info {
-  text-align: left;
+/* About Section */
+#about {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
-.contact-info h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.contact-info p {
-  margin: 5px 0;
-  font-size: 1rem;
-  line-height: 1.6;
-  display: flex; /* Align icon and text inline */
-  align-items: center; /* Vertically align icon with text */
-}
-
-.contact-info p img.icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.contact-info a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-
-/* Social Media Icons */
-.social-icons {
-  display: flex;
-  gap: 15px; /* Space between icons */
-}
-
-.social-icons a {
-  text-decoration: none;
-}
-
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-
-
+/* Skills Section */
 #skills {
-  text-align: left;
-  padding: 20px 0;
+    padding: 40px 0;
+    background-color: #f9f9f9;
 }
 
 #skills h2 {
-  text-align: center;
-  margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .skills-list {
-  list-style: disc inside;
-  padding-left: 20px;
-  font-size: 1rem;
-  line-height: 1.8;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.skills-list li {
-  margin: 10px 0;
+.skills-list div {
+    width: 45%;
+    margin-bottom: 20px;
 }
 
+.skills-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list ul li {
+    margin: 8px 0;
+}
+
+/* Experience Section */
+#experience {
+    padding: 40px 0;
+}
+
+.job {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.job ul li {
+    margin: 5px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+    background-color: #218838;
+}
+
+/* Contact Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .contact-info a {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+footer .contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list div {
+        width: 90%;
+        text-align: center;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+}
