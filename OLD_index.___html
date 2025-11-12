@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Zode - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1>Yash Zode</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Yash Zode" class="profile-photo">
+      <div class="hero-text">
+        <h2>Full Stack Software Engineer | DevOps Specialist</h2>
+        <p>
+          Building scalable and efficient software solutions with expertise in Java, Spring Boot, Angular, and DevOps tools such as Docker, Kubernetes, and Jenkins. Proficient in designing CI/CD pipelines to automate and accelerate software delivery.
+        </p>
+        <a href="YashZode_Resume.pdf" class="btn" target="_blank">View Resume</a>
+        <a href="mailto:zodeyash98@gmail.com" class="btn-contact">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Yash Zode, a Software Engineer with 3+ years of experience in developing scalable solutions. I'm currently pursuing my Master's in Computer Science at UWM, focusing on AI and Cloud Computing. I am passionate about problem-solving and creating accessible technology.</p>
+    </div>
+  </section>
+
+ <section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Programming Languages</h3>
+        <p>Python, Java, C++, C#</p>
+      </div>
+      <div>
+        <h3>Frameworks</h3>
+        <p>Spring Boot, Angular, React</p>
+      </div>
+      <div>
+        <h3>DevOps Tools</h3>
+        <p>Docker, Kubernetes, Jenkins</p>
+      </div>
+      <div>
+        <h3>CI/CD & Automation</h3>
+        <p>CI/CD Pipelines, Jenkins, GitHub Actions</p>
+      </div>
+      <div>
+        <h3>Cloud Platforms</h3>
+        <p>AWS, Azure</p>
+      </div>
+      <div>
+        <h3>Databases</h3>
+        <p>MySQL, PostgreSQL, MongoDB</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Graduate Teaching Assistant</h3>
+      <p>University of Wisconsin-Milwaukee | Aug 2024 – Present</p>
+      <ul>
+        <li>Enhanced student engagement by 40% through innovative teaching materials.</li>
+        <li>Led Java lab sessions, increasing lab performance scores by 25%.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Software Engineer</h3>
+      <p>Cognizant | Nov 2022 - Aug 2023</p>
+      <ul>
+        <li>Developed microservices, reducing deployment cycles by 20%.</li>
+        <li>Streamlined CI/CD pipelines, boosting deployment efficiency by 20%.</li>
+        <li>Improved performance of Spring Boot-based microservices.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Software Engineer</h3>
+      <p>Comau | Oct 2020 - Nov 2022</p>
+      <ul>
+        <li>Developed Java-based monolithic applications and RESTful APIs using Spring Boot.</li>
+        <li>Automated API testing using Postman, Selenium, and Python scripts, improving testing efficiency.</li>
+        <li>Collaborated with cross-functional teams to fix bugs and optimize system performance during production deployment.</li>
+        <li>Participated in Agile processes, including sprint planning and retrospectives, improving team efficiency.</li>
+        <li>Deployed applications and resolved production issues at client locations, including Fiat and Mahindra.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>CloudEduTrack</h3>
+        <p>A voice-activated quiz platform for motor and visually impaired users, built using Angular, Java, and Spring Boot.</p>
+      </div>
+      <div class="project">
+        <h3>Image Classification Using CNN</h3>
+        <p>Achieved 89.45% test accuracy by using EfficientNetV2S for image classification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:zodeyash98@gmail.com">zodeyash98@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yashzode/" target="_blank">linkedin.com/in/yashzode</a></p>
+    </div>
+  </section>
+  
+<section id="support-me">
+  <div class="container">
+    <h3>Support My Work</h3>
+    <p>If you appreciate my work and want to support me, you can send your contributions via Zelle at:</p>
+    <p><strong>Email:</strong> <a href="mailto:zodeyash98@gmail.com">zodeyash98@gmail.com</a></p>
+  </div>
+</section>
+  
+  <footer>
+  <div class="container">
+    <p>© 2024 Yash Zode. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/YashZode" target="_blank" title="GitHub">
+        <img src="icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.facebook.com/yash.zode" target="_blank" title="Facebook">
+        <img src="icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/zode_yash/" target="_blank" title="Instagram">
+        <img src="icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
