@@ -133,23 +133,129 @@ document.addEventListener('DOMContentLoaded', () => {
 const contactForm = document.getElementById('contact-form');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         // Get form data
         const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const subject = formData.get('subject');
+        const message = formData.get('message');
         
-        // Here you would typically send the data to a server
-        // For now, we'll just show an alert
-        alert('Thank you for your message! I will get back to you soon.');
+        // Get submit button
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
         
-        // Reset form
-        contactForm.reset();
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
         
-        // Optional: Redirect to booking section
-        // window.location.href = '#book';
+        try {
+            // Primary: Use mailto link (works immediately without any setup)
+            // This opens the user's email client with the form data pre-filled
+            const emailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+            const mailtoLink = `mailto:zodeyash98@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Show success message
+            showFormMessage('success', 'Opening your email client... If it doesn\'t open automatically, please email me at zodeyash98@gmail.com');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Alternative: If you want to use a form submission service instead, uncomment one of the options below:
+            
+            // Option 1: Use Formspree (free service)
+            // Sign up at https://formspree.io/ and get your form endpoint
+            // Then replace the mailto code above with:
+            /*
+            const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message,
+                    _replyto: email
+                })
+            });
+            
+            if (response.ok) {
+                showFormMessage('success', 'Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+            */
+            
+            // Option 2: Use EmailJS
+            // Sign up at https://www.emailjs.com/ and configure your service
+            // Then replace the mailto code above with:
+            /*
+            if (typeof emailjs !== 'undefined') {
+                await emailjs.send(
+                    'YOUR_SERVICE_ID',
+                    'YOUR_TEMPLATE_ID',
+                    {
+                        from_name: name,
+                        from_email: email,
+                        subject: subject,
+                        message: message,
+                        to_email: 'zodeyash98@gmail.com'
+                    },
+                    'YOUR_PUBLIC_KEY'
+                );
+                showFormMessage('success', 'Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            } else {
+                throw new Error('EmailJS not configured');
+            }
+            */
+            
+        } catch (error) {
+            // Error handling (fallback)
+            console.error('Form submission error:', error);
+            showFormMessage('error', 'There was an error sending your message. Please email me directly at zodeyash98@gmail.com');
+        } finally {
+            // Restore button state
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        }
     });
+}
+
+// Function to show form messages
+function showFormMessage(type, message) {
+    // Remove existing message if any
+    const existingMessage = document.querySelector('.form-message');
+    if (existingMessage) {
+        existingMessage.remove();
+    }
+    
+    // Create message element
+    const messageElement = document.createElement('div');
+    messageElement.className = `form-message form-message-${type}`;
+    messageElement.textContent = message;
+    
+    // Insert message before form
+    const formContainer = document.querySelector('.contact-form-container');
+    if (formContainer) {
+        formContainer.insertBefore(messageElement, contactForm);
+        
+        // Scroll to message
+        messageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        
+        // Remove message after 5 seconds
+        setTimeout(() => {
+            messageElement.remove();
+        }, 5000);
+    }
 }
 
 // ============================================
