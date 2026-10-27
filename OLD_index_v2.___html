@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yash Ananta Zode - Portfolio | Software Engineer | AI/ML Specialist | 5+ Years Experience">
+    <title>Yash Ananta Zode | Software Engineer & AI Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Cal.com Embed Script -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "yashzode", {
+            origin: "https://app.cal.com"
+        });
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">YZ</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#book" class="nav-link cta-button">Book a Call</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Yash Ananta Zode</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Software Engineer | AI/ML Specialist | Full-Stack Developer
+                    </p>
+                    <p class="hero-description">
+                        Software Engineer with 5+ years of experience building scalable data pipelines, backend systems, and AI-powered solutions. 
+                        Expert in Python, Java, ETL automation, and machine learning. Delivering secure, well-documented solutions on AWS and Azure.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#book" class="btn btn-secondary">Schedule a Meeting</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/YashZode" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yashzode" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:zodeyash98@gmail.com" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <img src="assets/images/profile.jpg" alt="Yash Ananta Zode" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Software Engineer with 5+ years of experience building scalable data pipelines, backend systems, and AI-powered solutions. 
+                        Currently working at Integral Systems, Inc., where I design and maintain ETL pipelines and develop custom CRM platforms.
+                    </p>
+                    <p>
+                        I specialize in Python, Java, SQL, and PostgreSQL, with expertise in ETL automation, data reliability, and CRM integration. 
+                        My experience spans from developing high-performance payment gateway systems processing 2M+ daily transactions, to building 
+                        multi-agent AI systems using CrewAI and LangChain that increased operational efficiency by 65%.
+                    </p>
+                    <p>
+                        I hold a Master of Science in Computer Science from the University of Wisconsin-Milwaukee, where I was awarded the 
+                        Chancellor's Graduate Student Award. My research focused on AI systems for automating graduate admission document processing, 
+                        improving faculty review efficiency by 60%.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2M+</div>
+                            <div class="stat-label">Daily Transactions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.99%</div>
+                            <div class="stat-label">System Uptime</div>
+                        </div>
+                    </div>
+                    <div class="resume-download" style="margin-top: 2rem; text-align: center;">
+                        <a href="YashZode_Resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">RAG (Retrieval-Augmented Generation)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Multi-Agent Systems (CrewAI, LangChain)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP & OCR (Tesseract, Hugging Face)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch & Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frameworks & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot & Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Angular & React Native</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS & Azure Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker, Kubernetes, Jenkins</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Databases & Messaging</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL, MongoDB, MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RabbitMQ, Kafka</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST & SOAP APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ETL Pipelines & Data Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">CREWAI Job Tailor</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CrewAI Job Tailor</h3>
+                        <p class="project-description">
+                            AI-powered application that uses CrewAI multi-agent systems to automatically tailor resumes and prepare 
+                            interview materials for specific job postings. Analyzes job descriptions, resumes, GitHub profiles, and 
+                            personal background to create ATS-optimized resumes with XYZ format bullets and generate relevant interview 
+                            questions. Leverages specialized AI agents for research, profiling, resume strategy, and interview preparation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CrewAI</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Multi-Agent Systems</span>
+                            <span class="tag">ATS Optimization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YashZode/CREWAI-Job-Tailor" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">AI Knowledge Base</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Knowledge Base with Dynamic Answer Generation</h3>
+                        <p class="project-description">
+                            Developed an AI-driven question-answering system using Retrieval-Augmented Generation (RAG), 
+                            combining document retrieval and natural language generation. Implemented FAISS for efficient 
+                            vector embeddings and T5 transformers for context-aware answers.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YashZode/AI-Powered-Knowledge-Base" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">ML Admission System</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ML-based Automated Admission Recommendation System</h3>
+                        <p class="project-description">
+                            Flask-based web application that predicts graduate admission chances by extracting and analyzing 
+                            scanned SOP and LOR PDFs using OCR and NLP. Achieved MAE of 0.05 and R² of 0.82, improving 
+                            faculty review efficiency by 60%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">OCR</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YashZode/Automated-Admission-Recommendation" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">CloudEduTrack</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CloudEduTrack: Accessible Online Quiz Platform</h3>
+                        <p class="project-description">
+                            Led development of a voice-activated quiz platform using Angular, JavaScript, and Spring Boot, 
+                            improving accessibility by 95% for visually and motor-impaired users. Increased user engagement 
+                            by 40% with adaptive UI themes and advanced speech recognition.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.uwm-cloudblog.net/general/cloudedutrack-an-integrated-cloud-based-quiz-examination-system/" target="_blank" rel="noopener noreferrer" class="project-link">View Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">IoT Platform</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">IoT Web Platform for Plant Control and Monitor</h3>
+                        <p class="project-description">
+                            Developed microservices-based MES platform with real-time monitoring using Java Spring Boot and 
+                            REST APIs. Improved manufacturing efficiency by 40% and enhanced data storage efficiency by 25% 
+                            through MongoDB and PostgreSQL integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="project-link">Contact for Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services & Offerings</h2>
+            <p class="section-subtitle">I provide comprehensive technology solutions to help your business grow</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3 class="service-title">AI & ML Solutions</h3>
+                    <p class="service-description">
+                        RAG systems, multi-agent AI platforms, NLP/OCR solutions, and machine learning models for intelligent automation.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3 class="service-title">Full-Stack Development</h3>
+                    <p class="service-description">
+                        Enterprise applications using Spring Boot, Flask, Angular, React Native. Backend systems with REST/SOAP APIs.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">ETL & Data Pipelines</h3>
+                    <p class="service-description">
+                        Scalable ETL pipelines, data integration, CRM systems, and data reliability solutions with automated monitoring.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3 class="service-title">Cloud & DevOps</h3>
+                    <p class="service-description">
+                        AWS/Azure deployment, Docker/Kubernetes orchestration, CI/CD pipelines, and infrastructure automation.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3 class="service-title">Payment Systems</h3>
+                    <p class="service-description">
+                        High-performance payment gateway systems with 99.99% uptime, fraud prevention, and secure transaction processing.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">System Integration</h3>
+                    <p class="service-description">
+                        Microservices architecture, message queues (RabbitMQ, Kafka), database integration, and legacy system modernization.
+                    </p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <p>Ready to discuss your project?</p>
+                <a href="#book" class="btn btn-primary">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section with Cal.com -->
+    <section id="book" class="booking">
+        <div class="container">
+            <h2 class="section-title">Schedule a Meeting</h2>
+            <p class="section-subtitle">
+                Let's discuss your project, explore opportunities, or just have a conversation about technology and innovation.
+            </p>
+            <div class="booking-options">
+                <div class="booking-card">
+                    <h3>Quick Connect</h3>
+                    <p>15-minute introduction call</p>
+                    <button class="btn btn-secondary" onclick="Cal('popup', {calLink: 'yashzode', layout: 'month_view'});">Book Now</button>
+                </div>
+                <div class="booking-card">
+                    <h3>Consultation</h3>
+                    <p>30-minute project discussion</p>
+                    <button class="btn btn-secondary" onclick="Cal('popup', {calLink: 'yashzode', layout: 'month_view'});">Book Now</button>
+                </div>
+                <div class="booking-card">
+                    <h3>Deep Dive</h3>
+                    <p>60-minute strategy session</p>
+                    <button class="btn btn-secondary" onclick="Cal('popup', {calLink: 'yashzode', layout: 'month_view'});">Book Now</button>
+                </div>
+            </div>
+            <div class="cal-embed-container">
+                <div id="cal-inline" style="width:100%;height:100%;overflow:scroll"></div>
+            </div>
+            <script type="text/javascript">
+                Cal("inline", {
+                    elementOrSelector: "#cal-inline",
+                    calLink: "yashzode",
+                    layout: "month_view"
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Education & Awards Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3 class="education-degree">Master of Science, Computer Science</h3>
+                    <p class="education-school">University of Wisconsin-Milwaukee</p>
+                    <p class="education-date">May 2025</p>
+                    <p class="education-details">
+                        Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Machine Learning
+                    </p>
+                    <p class="education-achievement">
+                        <strong>Achievements:</strong> Graduate Teaching Assistant, Awarded the Chancellor's Graduate Student Award
+                    </p>
+                </div>
+            </div>
+            
+            <div class="awards-section" style="margin-top: 3rem;">
+                <h3 class="subsection-title" style="text-align: center; margin-bottom: 2rem;">Awards & Certifications</h3>
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <h4>People's Choice Award</h4>
+                        <p>Hackreation Hackathon by Mitobyte, 2025</p>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7322687650975404033/" target="_blank" rel="noopener noreferrer" class="award-link">View Award</a>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">🎖️</div>
+                        <h4>RAG with Azure OpenAI</h4>
+                        <p>Microsoft Badge - Implemented Retrieval-Augmented Generation</p>
+                        <a href="https://learn.microsoft.com/api/achievements/share/en-us/yashzode/XQMF3FBY?sharingId=5AAB7F38D62DAF2" target="_blank" rel="noopener noreferrer" class="award-link">View Badge</a>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">📜</div>
+                        <h4>API's and Microservices</h4>
+                        <p>Developer Certification</p>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">☕</div>
+                        <h4>Spring Boot & Spring Cloud</h4>
+                        <p>Building Scalable Java Microservices Certification</p>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">🐧</div>
+                        <h4>Red Hat System Administrator</h4>
+                        <p>RHCSA Certification</p>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">📄</div>
+                        <h4>Copyright Registration</h4>
+                        <p>Examination Paper Setter Automation System (SW-12888/2019)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Have a project in mind? Email me or book a meeting to discuss your ideas.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:zodeyash98@gmail.com">zodeyash98@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/yashzode" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/YashZode" target="_blank" rel="noopener noreferrer">View my work</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📅</div>
+                        <div>
+                            <h4>Schedule a Meeting</h4>
+                            <a href="#book">Book a meeting via Cal.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" style="text-align: center; padding: 3rem 2rem;">
+                    <div style="max-width: 500px; margin: 0 auto;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Send me a message</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+                            The best way to reach me is through email or by booking a meeting. I'll respond as soon as possible!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Yash Ananta Zode</h3>
+                    <p>Software Engineer | AI/ML Specialist | Building scalable solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/YashZode" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/yashzode" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="#book">Book a Call</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yash Zode. All rights reserved.</p>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
